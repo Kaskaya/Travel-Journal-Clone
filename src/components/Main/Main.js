@@ -3,7 +3,9 @@ export default function Main(props) {
   return (
     <main>
       <div className="city-container">
-        <img src={item.img} alt="city" />
+        <a href={item.img} target="_blank">
+          <img src={item.img} alt="city" />
+        </a>
         <div>
           <div className="container-up">
             <svg
