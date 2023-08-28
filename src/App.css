@@ -22,11 +22,19 @@ header h2 {
   align-items: end;
   margin-left: 40px;
   margin-top: 24px;
+  background-color: white;
+  position: relative;
 }
 
 .container-down {
+  max-height: 350px;
   margin-left: 40px;
   margin-top: -10px;
+  overflow-y: scroll;
+}
+
+.container-down::-webkit-scrollbar {
+  overflow: hidden;
 }
 
 .country {
@@ -42,6 +50,12 @@ img {
   object-fit: cover;
   object-position: 40% 0;
   border-radius: 10px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 .city-container {
