@@ -3,14 +3,14 @@ export default function Main(props) {
   console.log(item.img);
   return (
     <main>
-      <div className="amsterdam-container">
+      <div className="city-container">
         <img src={item.img} alt="city" />
         <div>
           <div className="container-up">
             <svg
               width="19"
               height="16"
-              viewBox="0 0 7 10"
+              viewBox="0 0 10 10"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -22,11 +22,11 @@ export default function Main(props) {
               />
             </svg>
             <h1 className="country">{item.country}</h1>
-            <p>View on Google</p>
+            <span>View on Google</span>
           </div>
-          <div>
+          <div className="container-down">
             <h1>{item.city}</h1>
-            <p> {item.date} </p>
+            <p className="date"> {item.date} </p>
             <p>{item.text}</p>
           </div>
         </div>
@@ -34,6 +34,3 @@ export default function Main(props) {
     </main>
   );
 }
-
-/* <div className="toronto-container">Toronto</div>
-      <div className="london-container">London</div> */
