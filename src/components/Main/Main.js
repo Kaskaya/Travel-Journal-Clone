@@ -22,7 +22,9 @@ export default function Main(props) {
               />
             </svg>
             <h1 className="country">{item.country}</h1>
-            <span>View on Google</span>
+            <a href={item.location} target="_blank">
+              <span>View on Google</span>
+            </a>
           </div>
           <div className="container-down">
             <h1>{item.city}</h1>
